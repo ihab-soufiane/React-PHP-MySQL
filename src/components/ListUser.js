@@ -25,7 +25,7 @@ export default function ListUser() {
     return (
         <div>
             <h1>List Users</h1>
-            <table>
+            <table border="1" className="c">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -49,8 +49,8 @@ export default function ListUser() {
                             <td>{user.phoneNumber}</td>
                             <td>{user.picture}</td>
                             <td>
-                                <Link to={`user/${user.id}/edit`} style={{marginRight: "10px"}}>Edit</Link>
-                                <button onClick={() => deleteUser(user.id)}>Delete</button>
+                                <Link to={`user/${user.id}/edit`} style={{marginRight: "10px"}} className="e">Edit</Link>
+                                <button className="b" onClick={() => deleteUser(user.id)}>Delete</button>
                             </td>
                         </tr>
                     )}

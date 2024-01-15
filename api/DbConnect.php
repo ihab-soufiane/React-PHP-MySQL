@@ -4,7 +4,7 @@
 	*/
 	class DbConnect {
 		private $server = 'localhost';
-		private $dbname = 'react_crud';
+		private $dbname = 'react_php_crud';
 		private $user = 'root';
 		private $pass = '';
 
